@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <nav>
+        <div class="row">
+            <div class="col-md-1 pl-4 pt-4 pb-3 pr-0">
+                <a href="./index.html">
+                    <img src="logo.png" style="width: 100%; height: 60%; background-color: #343F4B;"></img>
+                </a>
+            </div>
+            <div class="col-md-3 pt-5">
+                <form onsubmit="return false;">
+                    <input class="rounded-div" type="text" placeholder="Pesquisar" id="pesquisar" onkeyup="submitForm(event)">
+                </form>
+            </div>
+
+            <div class="col-md-4 text-center pt-3 pb-1">
+                <div class="row">
+                    <div class="col-12">
+                        <img src= "starrrr.png" style="width: 30%;" alt="Recomende um filme">
+                    </div>
+                    <div class="col-12">
+                        <p class="text-light">Recomende um filme</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1 offset-md-3 pt-3">
+                <a href="perfil.html">
+                    <img src="face_smile_big_emoji_icon_181074.png" style="width: 100%; background-color:#343F4B;" alt="Meu perfil">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3 ml-0">
+        <div class="row mb-3" id="selects">
+            <div class="col-md-2 pr-0">
+                <button id="botao-expansao">Expandir Filtros</button>
+                <div id="filtros" style="display: none;">
+                </div>
+            </div>
+            <div class="col-md-2 pl-0">
+                <button id="botao-ordena">Ordenar</button>
+                <div id="ordena" style="display: none;">
+                    <select name="ordenacao" id="ordenacao">
+                        <option value="" label="Selecione uma opção"></option>
+                        <option value="gender" label="Gênero"></option>
+                        <option value="name" label="Nome"></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div id="rowCatalog" class="row">
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c0c38a24b2.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
