@@ -47,17 +47,58 @@ const filterOptions = [
 ]
 // Carrega o array de filmes de exemplo vindo do arquivo .json
 
-async function fetchData() {
-  const response = await fetch('../films.json');
-  const data = await response.json();
-  return data;
-}
+// async function fetchData() {
+//   const response = await fetch('../films.json');
+//   const data = await response.json();
+//   return data;
+// }
 
 let films;
 
 async function fetchFilms () {
   try {
-    films = await fetchData();
+    films = [
+      {
+          "name": "Encanto",
+          "gender": "action",
+          "cover": "./covers/d1.jpeg"
+      },
+      {
+          "name": "Wish",
+          "gender": "fantasia",
+          "cover": "./covers/download.jpeg"
+      },
+      {
+          "name": "Besouro Azul",
+          "gender": "action",
+          "cover": "./covers/images.jpeg"
+      },
+      {
+          "name": "Terrifier",
+          "gender": "romance",
+          "cover": "./covers/terrifier_2_poster_oficial.jpg"
+      },
+      {
+          "name": "O lar das crianças peculiares",
+          "gender": "terror",
+          "cover": "./covers/lardascriancaspeculiares_2.jpg"
+      },
+      {
+          "name": "Casa Gucci",
+          "gender": "drama",
+          "cover": "./covers/casa-gucci.jpg"
+      },
+      {
+          "name": "Veloses e Furiosos 9",
+          "gender": "action",
+          "cover": "./covers/3385237.jpg"
+      },
+      {
+          "name": "Star Wars: O despertar da força",
+          "gender": "action",
+          "cover": "./covers/starwars.jpg"
+      }
+  ];
 
     // Só após carregados os filmes a lógica é implementada
     main();
